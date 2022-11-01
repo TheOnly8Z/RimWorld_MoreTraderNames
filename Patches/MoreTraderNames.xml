@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RulePackDef[defName="NamerTraderGeneral"]/rulePack/rulesStrings</xpath>
+    <value>
+      <rulesStrings>
+        <li>r_name(p=4)->[businessname][business]</li>
+        <li>r_name(p=4)->[maybe_adjective] [thing] [businesstype]</li>
+        <li>r_name(p=3)->[adjective] [businesstype]</li>
+        <li>r_name(p=3)->[name] [businesstype]</li>
+        <li>r_name(p=2)->[NamePerson][div][NamePerson] [businesstype]</li>
+        <li>r_name->[adjective][business]</li>
+        <li>r_name->[thing][business]</li>
+        <li>r_name->[numbers] [businesstype]</li>
+        <li>r_name->[d_or_l][d_or_l][business]</li>
+        <li>r_name->[letters][business]</li>
+        <li>r_name->[letters][div][Letter] [businesstype]</li>
+
+        <li>maybe_adjective(p=3)-></li>
+        <li>maybe_adjective->[adjective]</li>
+        <li>adjective->[Color]</li>
+        <li>adjective->[AdjectiveFriendly]</li>
+        <li>adjective->[AdjectiveBadass]</li>
+        <li>adjective->[AdjectiveLarge]</li>
+        <li>adjective->[Direction]</li>
+        <li>adjective(p=0.5)->[PersonAlly]</li>
+        <li>adjective(p=0.3)->[PersonFamily]</li>
+
+        <li>thing->[Animal]</li>
+        <li>thing->[Direction]</li>
+        <li>thing->[NaturalObject]</li>
+        <li>thing->[TreeType]</li>
+        <li>thing->[Vegetable]</li>
+        <li>thing->[TerrainFeatures]</li>
+        <li>thing->[Bodyparts]</li>
+
+        <li>letters->[Letter]</li>
+        <li>letters->[Letter][Letter]</li>
+        <li>letters->[Letter][Letter][Letter]</li>
+        <li>numbers->[Digit][Digit][Digit]</li>
+        <li>numbers->[Digit][Digit][Digit][Digit]</li>
+
+        <li>name(p=4)->[NamePerson]</li>
+        <li>name(p=2)->[NameAnimalUnisex]</li>
+        <li>name->[celestial_name]</li>
+
+        <li>d_or_l->[Digit]</li>
+        <li>d_or_l->[Letter]</li>
+        <li>div-> &amp; </li>
+        <li>div->/</li>
+        <li>div->-</li>
+        <li>business-> [businesstype]</li>
+        <li>business(p=0.25)->[businessappend]</li>
+      </rulesStrings>
+    </value>
+  </Operation>
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RulePackDef[defName="NamerTraderGeneral"]/rulePack/rulesFiles</xpath>
+    <value>
+      <li>businessappend->Words/Nouns/BusinessTypesAppend</li>
+    </value>
+  </Operation>
+</Patch>

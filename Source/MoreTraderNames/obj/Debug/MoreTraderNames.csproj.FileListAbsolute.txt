@@ -1,0 +1,6 @@
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\MoreTraderNames\Source\MoreTraderNames\bin\Debug\MoreTraderNames.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\MoreTraderNames\Source\MoreTraderNames\bin\Debug\MoreTraderNames.pdb
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\MoreTraderNames\Source\MoreTraderNames\obj\Debug\MoreTraderNames.csproj.AssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\MoreTraderNames\Source\MoreTraderNames\obj\Debug\MoreTraderNames.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\MoreTraderNames\Source\MoreTraderNames\obj\Debug\MoreTraderNames.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\MoreTraderNames\Source\MoreTraderNames\obj\Debug\MoreTraderNames.pdb

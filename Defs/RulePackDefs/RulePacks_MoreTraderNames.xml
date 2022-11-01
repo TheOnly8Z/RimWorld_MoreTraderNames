@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerTraderCombat</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=5)->[businessname] [wBusiness]</li>
+        <li>r_name(p=5)->[maybe_adjective] [thing] [wBusiness]</li>
+        <li>r_name(p=3)->[adjective] [wBusiness]</li>
+        <li>r_name(p=3)->[name] [wBusiness]</li>
+        <li>r_name(p=2)->[NamePerson][div][NamePerson][maybe_business]</li>
+        <li>r_name->[letters] [wBusiness]</li>
+        <li>r_name->[numbers] [wBusiness]</li>
+        <li>r_name->[d_or_l][d_or_l] [wBusiness]</li>
+        <li>r_name->[letters][div][Letter] [wBusiness]</li>
+
+        <li>maybe_adjective(p=2)-></li>
+        <li>maybe_adjective->[adjective]</li>
+        <li>adjective->[Color]</li>
+        <li>adjective->[ColorBadass]</li>
+        <li>adjective->[AdjectiveFriendly]</li>
+        <li>adjective->[AdjectiveBadass]</li>
+        <li>adjective->[AdjectiveLarge]</li>
+        <li>adjective->[Direction]</li>
+
+        <li>thing->[Animal]</li>
+        <li>thing->[AnimalBadass]</li>
+        <li>thing->[PersonBadass]</li>
+        <li>thing->[Direction]</li>
+        <li>thing->[NaturalObject]</li>
+        <li>thing->[TreeType]</li>
+        <li>thing->[Vegetable]</li>
+        <li>thing->[TerrainFeatures]</li>
+        <li>thing->[Weapon]</li>
+
+        <li>name(p=4)->[NamePerson]</li>
+        <li>name(p=2)->[NameAnimalUnisex]</li>
+        <li>name->[celestial_name]</li>
+
+        <li>letters->[Letter]</li>
+        <li>letters->[Letter][Letter]</li>
+        <li>letters->[Letter][Letter][Letter]</li>
+        <li>numbers->[Digit][Digit][Digit]</li>
+        <li>numbers->[Digit][Digit][Digit][Digit]</li>
+
+        <li>maybe_business-></li>
+        <li>maybe_business-> [wBusiness]</li>
+        <li>div-> &amp; </li>
+        <li>div->/</li>
+        <li>div->-</li>
+        <li>div->+</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>wBusiness->Words/Nouns/BusinessTypesCombat</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerTraderExotic</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=5)->[businessname] [business]</li>
+        <li>r_name(p=3)->[adjective] [business]</li>
+        <li>r_name(p=3)->[name] [business]</li>
+        <li>r_name(p=3)->[maybe_adjective] [thing] [business]</li>
+        <li>r_name->[letters] [business]</li>
+        <li>r_name->[numbers] [business]</li>
+        <li>r_name->[d_or_l][d_or_l] [business]</li>
+        <li>r_name->[letters][div][Letter] [business]</li>
+        <li>r_name(p=2)->[NamePerson][div][NamePerson] [business]</li>
+
+        <li>maybe_adjective(p=2)-></li>
+        <li>maybe_adjective->[adjective]</li>
+        <li>adjective->[Color]</li>
+        <li>adjective->[AdjectiveFriendly]</li>
+        <li>adjective->[AdjectiveCurious]</li>
+        <li>adjective->[AdjectiveLarge]</li>
+        <li>adjective->[Direction]</li>
+
+        <li>thing->[Animal]</li>
+        <li>thing->[AnimalBadass]</li>
+        <li>thing->[Direction]</li>
+        <li>thing->[NaturalObject]</li>
+        <li>thing->[TreeType]</li>
+        <li>thing->[Vegetable]</li>
+        <li>thing->[TerrainFeatures]</li>
+        <li>thing->[Bodyparts]</li>
+        <li>thing->[Weapons]</li>
+
+        <li>letters->[Letter]</li>
+        <li>letters->[Letter][Letter]</li>
+        <li>letters->[Letter][Letter][Letter]</li>
+        <li>numbers->[Digit][Digit][Digit]</li>
+        <li>numbers->[Digit][Digit][Digit][Digit]</li>
+
+        <li>name(p=4)->[NamePerson]</li>
+        <li>name(p=2)->[NameAnimalUnisex]</li>
+        <li>name->[celestial_name]</li>
+
+        <li>business-> [eBusiness]</li>
+        <li>business-> [nBusiness]</li>
+        <li>div-> &amp; </li>
+        <li>div->/</li>
+        <li>div->-</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>nBusiness->Words/Nouns/BusinessTypes</li>
+        <li>eBusiness->Words/Nouns/BusinessTypesExotic</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerTraderPirate</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=6)->[maybe_adjective] [thing] [pBusiness]</li>
+        <li>r_name(p=3)->[name] [pBusiness]</li>
+        <li>r_name(p=3)->[NamePerson][div][NamePerson] [pBusiness]</li>
+        <li>r_name(p=3)->[adjective] [pBusiness]</li>
+        <li>r_name->[letters] [pBusiness]</li>
+        <li>r_name->[numbers] [pBusiness]</li>
+        <li>r_name->[d_or_l][d_or_l] [pBusiness]</li>
+
+        <li>maybe_adjective-></li>
+        <li>maybe_adjective->[adjective]</li>
+        <li>adjective->[Color]</li>
+        <li>adjective->[ColorBadass]</li>
+        <li>adjective->[AdjectiveBadass]</li>
+        <li>adjective->[AdjectiveLarge]</li>
+        <li>adjective->[ConceptBadass]</li>
+        <li>adjective->[Direction]</li>
+
+        <li>thing(p=2)->[Enemy]</li>
+        <li>thing->[AnimalBadass]</li>
+        <li>thing->[PersonBadass]</li>
+        <li>thing->[TerrainFeatures]</li>
+        <li>thing->[Weapon]</li>
+        <li>thing->[BodyPart]</li>
+
+        <li>name(p=4)->[NamePerson]</li>
+        <li>name(p=2)->[NameAnimalUnisex]</li>
+        <li>name->[celestial_name]</li>
+
+        <li>letters->[Letter]</li>
+        <li>letters->[Letter][Letter]</li>
+        <li>letters->[Letter][Letter][Letter]</li>
+        <li>numbers->[Digit][Digit][Digit]</li>
+        <li>numbers->[Digit][Digit][Digit][Digit]</li>
+
+        <li>div-> &amp; </li>
+        <li>div->/</li>
+        <li>div->-</li>
+        <li>div->+</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>pBusiness->Words/Nouns/BusinessTypesPirate</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+</Defs>

@@ -1,0 +1,15 @@
+Sailors
+Gang
+Runners
+Crew
+Slavers
+Slayers
+Mercenaries
+Group
+Mob
+Family
+Pack
+Smugglers
+Force
+Squad
+Team
